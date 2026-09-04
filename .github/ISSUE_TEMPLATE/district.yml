@@ -20,9 +20,21 @@ body:
     id: website
     attributes:
       label: Official district website
-      description: If known.
+      description: If known. Please use the district's public official website rather than a private portal.
   - type: textarea
     id: reason
     attributes:
       label: Why would this district be useful to add?
-      description: Optional context such as local interest or schools you would use.
+      description: Tell us about the family/community need or schools you would use.
+    validations:
+      required: true
+  - type: textarea
+    id: origin
+    attributes:
+      label: What prompted this request?
+      description: Optional public context such as living in the district, a planned move, local interest, or another SchoolBrief user asking for it.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Helpful public source links
+      description: Optional links to public district calendars, menus, school lists, or other official pages that may help evaluate coverage. Do not include login-only or private information.
