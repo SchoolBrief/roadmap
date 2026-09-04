@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "repository": "SchoolBrief/roadmap",
   "source_of_truth": "github_issues",
   "description": "Public, presentation-neutral SchoolBrief roadmap data for optional use by schoolbrief.io and other public surfaces.",
@@ -11,6 +11,11 @@
       "status": "planned",
       "target": null,
       "summary": "Evaluate and onboard Oconee County School District as a future supported SchoolBrief district. No public release date is committed yet.",
+      "description": "Add support for Oconee County School District in South Carolina so families can select its schools and use the SchoolBrief calendar, dining, and Updates experience where supported public source data is available.",
+      "why": "Ware Shoals is intentionally small and was useful for proving that SchoolBrief can move beyond its original Greenville assumptions. Oconee is a larger Upstate South Carolina district and is the next agreed expansion target for testing whether the multi-district experience continues to scale cleanly.",
+      "origin": "Geographic expansion roadmap",
+      "origin_detail": "SchoolBrief reviewed Upstate South Carolina districts as candidates for the next onboarding exercise and selected Ware Shoals first, followed by Oconee.",
+      "source_url": null,
       "url": "https://github.com/SchoolBrief/roadmap/issues/1"
     }
   ]
