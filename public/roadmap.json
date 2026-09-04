@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "repository": "SchoolBrief/roadmap",
+  "source_of_truth": "github_issues",
+  "description": "Public, presentation-neutral SchoolBrief roadmap data for optional use by schoolbrief.io and other public surfaces.",
+  "items": []
+}
