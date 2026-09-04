@@ -16,7 +16,19 @@ body:
     validations:
       required: true
   - type: textarea
+    id: why
+    attributes:
+      label: Why would this matter to you or your family?
+      description: Explain the practical benefit, not just the requested UI or implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: origin
+    attributes:
+      label: What prompted this request?
+      description: For example, something you encountered in the app, a school workflow you repeat, another public tool, or a limitation you noticed.
+  - type: textarea
     id: context
     attributes:
-      label: Additional context
-      description: Examples or screenshots are welcome if they contain no private information.
+      label: Additional context / public source
+      description: Examples, public source links, or screenshots are welcome if they contain no private information.
