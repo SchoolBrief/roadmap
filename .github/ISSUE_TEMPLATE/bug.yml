@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a user-visible SchoolBrief problem
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Please do not include student information, credentials, private data, or security-sensitive details.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the visible behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: input
+    id: district
+    attributes:
+      label: District
+      placeholder: Greenville County Schools
+  - type: input
+    id: school
+    attributes:
+      label: School
+      description: Leave blank if the problem is district-wide or not school-specific.
+  - type: input
+    id: version
+    attributes:
+      label: SchoolBrief version
+      description: If known.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include approximate observation time or a non-sensitive screenshot if useful.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public report check
+      options:
+        - label: I have not included student information, credentials, private data, or security vulnerability details.
+          required: true
