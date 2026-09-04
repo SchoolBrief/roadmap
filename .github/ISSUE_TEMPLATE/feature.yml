@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest a user-facing SchoolBrief improvement
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the user need or friction first.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like SchoolBrief to do?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Examples or screenshots are welcome if they contain no private information.
