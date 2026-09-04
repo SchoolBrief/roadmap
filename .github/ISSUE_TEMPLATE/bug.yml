@@ -19,6 +19,26 @@ body:
       label: What did you expect?
     validations:
       required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Why does this matter?
+      description: Tell us what this prevents, confuses, or makes harder for you or your family.
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Where did you encounter it?
+      description: This helps preserve the public origin/context of the report.
+      options:
+        - iPhone app
+        - Public web calendar
+        - schoolbrief.io website
+        - submit.schoolbrief.io
+        - Other / not sure
+    validations:
+      required: true
   - type: input
     id: district
     attributes:
@@ -37,8 +57,8 @@ body:
   - type: textarea
     id: context
     attributes:
-      label: Additional context
-      description: Include approximate observation time or a non-sensitive screenshot if useful.
+      label: Additional context / source
+      description: Include approximate observation time, a public source URL, or a non-sensitive screenshot if useful.
   - type: checkboxes
     id: safety
     attributes:
