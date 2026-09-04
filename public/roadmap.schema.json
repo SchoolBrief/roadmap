@@ -1,11 +1,11 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://schoolbrief.io/schema/roadmap-v1.json",
+  "$id": "https://schoolbrief.io/schema/roadmap-v2.json",
   "title": "SchoolBrief Public Roadmap",
   "type": "object",
   "required": ["schema_version", "repository", "source_of_truth", "items"],
   "properties": {
-    "schema_version": { "const": 1 },
+    "schema_version": { "const": 2 },
     "repository": { "const": "SchoolBrief/roadmap" },
     "source_of_truth": { "const": "github_issues" },
     "description": { "type": "string" },
@@ -13,14 +13,19 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "title", "type", "status", "url"],
+        "required": ["id", "title", "type", "status", "description", "why", "origin", "url"],
         "properties": {
           "id": { "type": "integer", "minimum": 1 },
           "title": { "type": "string" },
-          "type": { "enum": ["bug", "feature", "district"] },
+          "type": { "enum": ["bug", "feature", "district", "known_limitation", "documentation"] },
           "status": { "enum": ["under_review", "planned", "in_progress", "verification", "released", "not_planned"] },
           "target": { "type": ["string", "null"] },
           "summary": { "type": ["string", "null"] },
+          "description": { "type": "string", "minLength": 1 },
+          "why": { "type": "string", "minLength": 1 },
+          "origin": { "type": "string", "minLength": 1 },
+          "origin_detail": { "type": ["string", "null"] },
+          "source_url": { "type": ["string", "null"], "format": "uri" },
           "url": { "type": "string", "format": "uri" }
         },
         "additionalProperties": false
