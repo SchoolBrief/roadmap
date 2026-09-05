@@ -17,7 +17,7 @@
         "properties": {
           "id": { "type": "integer", "minimum": 1 },
           "title": { "type": "string" },
-          "type": { "enum": ["bug", "feature", "district", "known_limitation", "documentation"] },
+          "type": { "enum": ["bug", "feature", "district", "known_limitation", "documentation", "release"] },
           "status": { "enum": ["under_review", "planned", "in_progress", "verification", "released", "not_planned"] },
           "target": { "type": ["string", "null"] },
           "summary": { "type": ["string", "null"] },
